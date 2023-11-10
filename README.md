@@ -24,24 +24,23 @@ An example of API Key configuration : <br>
 weather_service { api_key = "YOUR_WEATHER_SERVICE_API_KEY"; } </b>
 
 ### Explanation:
-
 ### Tokenizer (tokenize function):
 
-SERVICE_NAME: Matches valid service names, such as alphanumeric strings starting with an alphabet or underscore.
-STRING: Matches strings enclosed in double quotes, allowing for escape characters.
-EQUALS: Matches the equals sign (=).
-SEMICOLON: Matches the semicolon (;).
-OPEN_BRACE and CLOSE_BRACE: Match opening and closing curly braces ({ and }).
-API_KEY: Matches the fixed string "api_key".
-Parser (Parser class):
+SERVICE_NAME: Matches valid service names, such as alphanumeric strings starting with an alphabet or underscore. <br>
+STRING: Matches strings enclosed in double quotes, allowing for escape characters. <br>
+EQUALS: Matches the equals sign (=). <br>
+SEMICOLON: Matches the semicolon (;). <br>
+OPEN_BRACE and CLOSE_BRACE: Match opening and closing curly braces ({ and }). <br>
+API_KEY: Matches the fixed string "api_key". <br>
 
+## Parser (Parser class):
 The Parser class initializes with a list of tokens and implements methods for parsing services and API key statements.
 parse_service: Parses a service declaration, including the service name and API key statements.
 parse_api_key_statements: Parses API key statements within a service declaration.
 match, check, advance, previous: Helper methods for token matching and traversal.
 error: Raises an exception in case of a parsing error.
-Project Execution:
 
+## Project Execution:
 config  ::= service_declaration+
 service_declaration ::= SERVICE_NAME '{' api_key_statements '}'
 api_key_statements ::= (API_KEY '=' STRING ';')*
