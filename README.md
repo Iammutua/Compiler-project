@@ -1,11 +1,11 @@
 # Compiler-project
 
 ## Group members
-121891   Salomon Metre <br>
-131548   Nathan Ruru <br>
-134977   Jeff Munyigi <br>
-119314   Oguta Cassey Moses <br>
-129040   Wambua James Mutua
+<b> 121891 </b>   Salomon Metre <br>
+<b> 131548 </b>  Nathan Ruru <br>
+<b> 134977 </b>  Jeff Munyigi <br>
+<b> 119314 </b>  Oguta Cassey Moses <br>
+<b> 129040 </b>  Wambua James Mutua
 
 ## Problem Statement:
 The goal of this project is to implement a simple compiler construction project that includes a tokenizer and parser for a specific configuration language used for defining API key configurations. The configuration language allows users to specify services and their corresponding API keys.
