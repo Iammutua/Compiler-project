@@ -26,12 +26,12 @@ weather_service { api_key = "YOUR_WEATHER_SERVICE_API_KEY"; } </b>
 ### Explanation:
 ### Tokenizer (tokenize function):
 
-SERVICE_NAME: Matches valid service names, such as alphanumeric strings starting with an alphabet or underscore. <br>
-STRING: Matches strings enclosed in double quotes, allowing for escape characters. <br>
-EQUALS: Matches the equals sign (=). <br>
-SEMICOLON: Matches the semicolon (;). <br>
-OPEN_BRACE and CLOSE_BRACE: Match opening and closing curly braces ({ and }). <br>
-API_KEY: Matches the fixed string "api_key". <br>
+1. SERVICE_NAME: Matches valid service names, such as alphanumeric strings starting with an alphabet or underscore. <br>
+2. STRING: Matches strings enclosed in double quotes, allowing for escape characters. <br>
+3. EQUALS: Matches the equals sign (=). <br>
+4. SEMICOLON: Matches the semicolon (;). <br>
+5. OPEN_BRACE and CLOSE_BRACE: Match opening and closing curly braces ({ and }). <br>
+6. API_KEY: Matches the fixed string "api_key". <br>
 
 ## Parser (Parser class):
 The Parser class initializes with a list of tokens and implements methods for parsing services and API key statements.
