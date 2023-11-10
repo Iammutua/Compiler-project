@@ -43,11 +43,8 @@ error: Raises an exception in case of a parsing error.
 Project Execution:
 
 config  ::= service_declaration+
-
 service_declaration ::= SERVICE_NAME '{' api_key_statements '}'
-
 api_key_statements ::= (API_KEY '=' STRING ';')*
-
 SERVICE_NAME     ::= [a-zA-Z_][a-zA-Z0-9_]*
 API_KEY          ::= "api_key"
 STRING           ::= '"(?:[^"\\]|\\.)*"'
