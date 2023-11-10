@@ -9,6 +9,16 @@ The solution involves creating a tokenizer and parser in Python to process a giv
 ## Grammar:
 The grammar for the configuration language is as follows:
 
+config  ::= service_declaration+
+
+service_declaration ::= SERVICE_NAME '{' api_key_statements '}'
+
+api_key_statements ::= (API_KEY '=' STRING ';')*
+
+SERVICE_NAME     ::= [a-zA-Z_][a-zA-Z0-9_]*
+API_KEY          ::= "api_key"
+STRING           ::= '"(?:[^"\\]|\\.)*"'
+
 ### Explanation:
 
 ### Tokenizer (tokenize function):
