@@ -19,8 +19,8 @@ STRING           ::= '"(?:[^"\\]|\\.)*"'
 This is grammar is tailored to configuring API keys
 <b> program -> service* service -> SERVICE_NAME '{' api_key_statement* '}' api_key_statement -> 'api_key' '=' STRING ';' </b>
 
-an example of API Key configuration :
-<b> google_maps { api_key = "YOUR_GOOGLE_MAPS_API_KEY"; }
+An example of API Key configuration : <br>
+<b> google_maps { api_key = "YOUR_GOOGLE_MAPS_API_KEY"; } <br>
 weather_service { api_key = "YOUR_WEATHER_SERVICE_API_KEY"; } </b>
 
 ### Explanation:
