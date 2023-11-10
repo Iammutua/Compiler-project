@@ -1,10 +1,10 @@
 # Compiler-project
 
 ## Group members
-121891   Salomon Metre
-131548   Nathan Ruru
-134977   Jeff Munyigi
-119314   Oguta Cassey Moses
+121891   Salomon Metre <br>
+131548   Nathan Ruru <br>
+134977   Jeff Munyigi <br>
+119314   Oguta Cassey Moses <br>
 129040   Wambua James Mutua
 
 ## Problem Statement:
