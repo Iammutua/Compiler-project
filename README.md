@@ -16,7 +16,7 @@ SERVICE_NAME     ::= [a-zA-Z_][a-zA-Z0-9_]*
 API_KEY          ::= "api_key"
 STRING           ::= '"(?:[^"\\]|\\.)*"'
 
-This is grammar is tailored to configuring API keys
+This is grammar is tailored to configuring API keys : <br>
 <b> program -> service* service -> SERVICE_NAME '{' api_key_statement* '}' api_key_statement -> 'api_key' '=' STRING ';' </b>
 
 An example of API Key configuration : <br>
